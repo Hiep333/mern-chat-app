@@ -5,14 +5,11 @@ import authRoutes from "./routes/auth.routes.js";
 import connectToMongoDB from "./db/connectToMongoDB.js";
 
 const app = express();
-
-dotenv.config();
 const PORT = process.env.PORT || 8888;
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+dotenv.config();
 
+app.use(express.json());
 app.use("/api/auth",authRoutes);
 
 app.listen(PORT, () => {
