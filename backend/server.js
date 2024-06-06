@@ -5,7 +5,7 @@ import authRoutes from "./routes/auth.routes.js";
 import connectToMongoDB from "./db/connectToMongoDB.js";
 
 const app = express();
-const PORT = process.env.PORT || 8888;
+const PORT = process.env.PORT || 8228;
 
 dotenv.config();
 
