@@ -17,7 +17,7 @@ const Login = () => {
             <input
               type="text"
               placeholder=" Enter Username"
-              className="w-full input input-bordered h-10 rounded bg-gray-800 text-gray-800"
+              className="w-full input input-bordered h-10 rounded bg-gray-800 text-white"
             />
           </div>
 
@@ -28,7 +28,7 @@ const Login = () => {
             <input
               type="password"
               placeholder=" Enter Password"
-              className="w-full input input-bordered h-10 rounded bg-gray-800 text-gray-800"
+              className="w-full input input-bordered h-10 rounded bg-gray-800 text-white"
             />
           </div>
           <Link 
