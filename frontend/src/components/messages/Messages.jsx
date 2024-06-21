@@ -4,7 +4,7 @@ import MessageSkeleton from "../skeletons/MessageSkeleton";
 import Message from "./Message";
 
 const Messages = () => {
-  const { messages, loading } = useGetMessages();
+  const { messages =[], loading } = useGetMessages();
   const lastMessageRef = useRef();
   
   useEffect(() => {
