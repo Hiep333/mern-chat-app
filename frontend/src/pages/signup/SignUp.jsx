@@ -107,8 +107,11 @@ const SignUp = () => {
             Already have an account?
           </Link>
           <div>
-            <button className="btn btn-primary w-full flex justify-center items-center mt-2 rounded bg-gray-800 text-white">
-              Sign Up
+            <button
+              className="btn btn-primary w-full flex justify-center items-center mt-2 rounded bg-gray-800 text-white "
+              disabled={loading}
+            >
+              {loading ? <span className = "loading loading-spinner" > </span> : "Sign Up"}
             </button>
           </div>
         </form>
