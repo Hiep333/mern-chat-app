@@ -17,6 +17,7 @@ dotenv.config();
 
 app.use(express.json());
 app.use(cookieParser());
+
 app.use(cors({ origin: "*" }));
 
 app.use("/api/auth", authRoutes);
