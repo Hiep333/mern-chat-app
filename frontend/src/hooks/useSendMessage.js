@@ -11,7 +11,7 @@ const useSendMessage = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        `/api/messages/send/${selectedConversation._id}`,
+        `${HOST_URL}/api/messages/send/${selectedConversation._id}`,
         {
           method: "POST",
           headers: {

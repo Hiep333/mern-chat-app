@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwincss from "tailwindcss";
+import { HOST_URL } from "./src/utils/contants";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwincss()],
@@ -13,7 +14,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       "/api": {
-        target: "http://13.250.123.139:8228",
+        target: "http://54.151.254.177",
       },
     },
   },
