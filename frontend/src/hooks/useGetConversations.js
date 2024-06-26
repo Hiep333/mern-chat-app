@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
+import { HOST_URL } from "../utils/contants";
 
 
 const useGetConversations = () => {
@@ -10,7 +11,7 @@ const useGetConversations = () => {
     const getConversations = async () => {
       setLoading(true);
       try {
-        const res = await fetch("/api/users");
+        const res = await fetch(`${HOST_URL}/api/users`);
         const data = await res.json();
         if (data.error) {
           throw new Error(data.error);
