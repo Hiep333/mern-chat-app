@@ -38,7 +38,7 @@ const SignUp = () => {
             <input
               type="text"
               placeholder=" Enter Full Name"
-              className="w-full input input-bordered h-10 rounded bg-gray-800 focus:text-white"
+              className="w-full input input-bordered h-10 rounded bg-gray-800 text-white"
               value={inputs.fullname}
               onChange={(e) =>
                 setInputs({ ...inputs, fullname: e.target.value })
@@ -53,7 +53,7 @@ const SignUp = () => {
             <input
               type="text"
               placeholder=" Enter Username"
-              className="w-full input input-bordered h-10 rounded bg-gray-800 focus:text-white"
+              className="w-full input input-bordered h-10 rounded bg-gray-800 text-white"
               value={inputs.username}
               onChange={(e) =>
                 setInputs({ ...inputs, username: e.target.value })
